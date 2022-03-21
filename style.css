@@ -1,0 +1,76 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-rows: 50px 700px 80px;
+    gap: 15px;
+    padding: 10px;
+}
+
+#middle {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    gap: 15px;
+}
+
+#middle-right {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    gap: 15px;
+}
+
+#bottom {
+    grid-template-rows: 1fr;
+}
+.card {
+    border: 0px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#header {
+    display: grid;
+}
+
+#top {
+    background-color: #FCD34D;
+}
+
+#nav {
+    background-color: #0EA5E9;
+}
+
+#article {
+    background-color: #94A3B8;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    
+}
+
+#article-text {
+    font-weight: 300;
+    padding: 30px;
+}
+
+#sidebar {
+    background-color: #EA580C;
+    /* max-width: 200px; */
+    
+}
+
+#bottom {
+    background-color: #3F3F46;
+}

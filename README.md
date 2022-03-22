@@ -1,2 +1,3 @@
 # holy-grid
-exercise for The Odin Project
+Grid layout exercise for The Odin Project. 
+Live: https://francisgolden.github.io/holy-grid/

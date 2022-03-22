@@ -1,76 +1,67 @@
+
 html, body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 100%;
+    width: 100vw;
     margin: 0px;
+    height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
 }
 
+/* create grid container with 4 rows and 2 columns
+added box-sizing: border-box in order to keep the container
+width and length after adding a white border as requested by
+the exercise. */
 #grid-container {
     display: grid;
-    grid-template-rows: 50px 700px 80px;
-    gap: 15px;
-    padding: 10px;
+    grid-template-rows: 0.5fr 0.5fr 4fr 0.5fr;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    border: 10px solid white;
 }
 
-#middle {
-    display: grid;
-    grid-template-columns: 0.5fr 3fr;
-    gap: 15px;
-}
-
-#middle-right {
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-    gap: 15px;
-}
-
-#bottom {
-    grid-template-rows: 1fr;
-}
 .card {
-    border: 0px solid black;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
+    text-transform: capitalize;
     color: white;
     font-weight: 900;
-    text-transform: capitalize;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    opacity: 0.90;
 }
 
 #header {
-    display: grid;
-}
-
-#top {
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: #FCD34D;
 }
 
-#nav {
-    background-color: #0EA5E9;
+#sidebar {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #EA580C;
+}
+
+
+#footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #3F3F46;
 }
 
 #article {
     background-color: #94A3B8;
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-    
 }
 
-#article-text {
-    font-weight: 300;
-    padding: 30px;
-}
-
-#sidebar {
-    background-color: #EA580C;
-    /* max-width: 200px; */
-    
-}
-
-#bottom {
-    background-color: #3F3F46;
+#nav {
+    background-color: #0EA5E9;
 }
